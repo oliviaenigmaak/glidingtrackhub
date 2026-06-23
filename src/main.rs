@@ -1,6 +1,6 @@
 use std::env;
 use std::time::Instant;
-const APP_NAME: &str = "bench-runner-b03a20";
+const APP_NAME: &str = "bench-runner-c6fe8e";
 const VERSION: &str = "0.0.0";
 struct Handler { name: String, version: String }
 impl Handler {
